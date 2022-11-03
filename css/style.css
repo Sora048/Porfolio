@@ -1,0 +1,350 @@
+@font-face {
+    font-family: compFont;
+    src: url(font/computerfont/Computerfont.ttf);
+}
+@font-face {
+    font-family: CormorantGaramond;
+    src: url(font/Cormorant_Garamond/CormorantGaramond-Italic.ttf);
+}
+@font-face {
+    font-family: original-tech;
+    src: url(font/origin_tech/OriginTech\ personal\ use.ttf);
+}
+@font-face {
+    font-family: arcade-classic;
+    src: url(font/arcade_classic_2/ARCADECLASSIC.TTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1rem;
+    color: #111;
+    background-image : url(img/home-page/bg.png);
+    background-size: contain;
+}
+
+
+/* nav tag */
+.home-nav {
+    background: #001bff linear-gradient(320deg, #001bff 10%, #1ddefd 50%, #2500ff 100%);
+}
+
+.nav-display {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-brand {
+    width: 100%;
+    font-family: compFont;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 4px #00000074;
+}
+
+.home-toggler-icon {
+    width: 100%;
+    border: #e6e6fa 2px solid;
+}
+
+.navbar-collapse {
+    width: 100%;
+}
+
+.nav-item {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.nav-item:hover {
+    background-color: #e4e4e4;
+    opacity: .75;
+    font-size: large;
+    font-weight: 900;
+}
+
+/* for pc width */
+@media only screen and (min-width: 1000px) {
+    header nav .container-fluid {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .navbar-brand, .navbar-collapse {
+        width: auto;
+    }
+
+    .navbar-brand {
+        text-align: left;
+    }
+
+    .nav-item {
+        margin-left: 1em;
+    }
+
+
+}
+
+/* minimum with of an ipad */
+/* @media only screen and (min-width: 768px) {
+
+} */
+
+
+
+/* main */
+.main-container {
+    width: 90%;
+    justify-self: center;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    padding: 1.5em 1.5em;
+    border: #c1c1c1 solid 3px;
+}
+
+.bg-main {
+    display: flex;
+    flex-direction: column;
+    background: #001bff linear-gradient(320deg, #001bff 25%, #1ddefd 80%, #2500ff 100%);
+    border: #c1c1c1 solid 2px;
+    padding: .5em;
+}
+
+.welcome-travelers {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 3.5rem;
+    font-family: original-tech;
+}
+
+.short-message {
+    margin: 0 auto;
+    font-family: CormorantGaramond;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.rick {
+    text-align: right;
+}
+
+
+/* Project */
+.project-container {
+    padding: 1.5em 1.5em;
+}
+
+.project-container h3 {
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: original-tech;
+    padding: .5em .5em;
+    border: #c1c1c1 solid 3px;
+    background: #001bff linear-gradient(320deg, #001bff 5%, #1ddefd 40%, #2500ff 80%);
+}
+
+.project-container section p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+#project1 {
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+}
+
+
+
+
+/* Footer home */
+
+footer {
+    background: #001bff linear-gradient(320deg, #001bff 20%, #1ddefd 50%, #2500ff 90%);
+    padding: 1em;
+    margin-top: 1.5em;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-footer-one {
+    width: 72%;   
+    padding: 1em;
+    margin-right: auto;
+    line-height: 3vmax;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* font-family: arcade-classic; */
+}
+
+#me {
+    font-weight: 400;
+    text-align: center;
+    text-decoration: underline;
+}
+
+footer ul li, footer section ul li {
+    list-style: none;
+}
+
+footer section ul li {
+    font-size: 15px;
+    margin-bottom: 1em;
+}
+
+.section-footer-two {
+    width: 25%;
+    background-color: #161414b4;
+    text-align: center;
+    padding: 1em;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.socials-icon {
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 5px;
+}
+.socials-icon:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    color: #1877f2;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    padding: 5px 8px;
+}
+
+.fa-google {
+    color: #FFFFFF;
+    background: #FFFFFF linear-gradient(0deg, #DB4437 10%, #4285F4 45%, #F4B400 55%, #0F9D58 125%);
+    border-radius: 100px;
+    width: 40px;
+}
+
+.fa-linkedin {
+    color:#FFFFFF;
+    background-color: #0077B5;
+    border-radius: 6px;
+}
+
+.fa-youtube {
+    color:#FFFFFF;
+    background-color: #FF0000;
+    border-radius: 5px;
+}
+
+.fa-instagram {
+    background: -webkit-linear-gradient(230deg, #515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+}
+
+.profile {
+    border: #c1c1c1 solid 2px;
+    padding: 0.5em;
+    background-image : url(img/home-page/bg.png);
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.wrapper-profile {
+    border: #c1c1c1 solid 2px;
+    display: flex;
+    flex-direction: row;
+}
+
+#profile-img {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.profile-text {
+    background-color: #c1c1c154;
+    text-align: justify;
+    margin: .5em;
+    padding: .5em;
+}
+
+.about-profile {
+    display: none;
+}
+
+#msql-img {
+    width: 100px;
+}
+
+/* for pc width */
+@media only screen and (min-width: 1000px) {
+    .profile {
+        display: none;
+    }
+
+    .section-footer-one {
+        width: 95%;
+        line-height: 2vmax;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    
+    .section-footer-two {
+        background-color: transparent;
+        width: 5%;
+        justify-content: center;
+        margin: .5em 0;
+    }
+
+    .contact-profile {
+        width: 100%;
+        padding: .5em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .contacts {
+        width: 20%;
+        margin-left: auto;
+        display: block;
+        justify-content: center;
+    }
+
+    .profile-text {
+        background-color: #c1c1c1d8;
+    }
+
+    .about-profile {
+        background-image : url(img/home-page/bg.png);
+        background-position: bottom;
+        width: 100%;
+        height: 30vh;
+        display: block;
+        border: #c1c1c1 solid 2px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
